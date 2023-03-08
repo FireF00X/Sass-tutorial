@@ -1,0 +1,71 @@
+.header i {
+  right: 89%;
+}
+.header .logo {
+  float: left;
+}
+@media (min-width:992px) {
+  .header .logo {
+    float: right;
+  }
+}
+@media (max-width: 767px) {
+  .header .logo {
+    float: right;
+  }
+}
+.header .navbar {
+  float: right;
+}
+@media (min-width:992px) {
+  .header .navbar {
+    float: right;
+  }
+}
+.header .navbar li {
+  float: right;
+}
+@media (max-width: 767px) {
+  .header .navbar li {
+    text-align: right;
+  }
+}
+
+/*start services*/
+@media (min-width: 991px) {
+  .services .collection .serv-box {
+    float: right;
+  }
+}
+
+/*end services*/
+/*start services*/
+.players .collection .player-box {
+  float: right;
+}
+
+/*end services*/
+/*start none*/
+.none .collection .lorem {
+  float: right;
+}
+
+/*end none*/
+.footer .gallary,
+.footer .info,
+.footer .data {
+  float: right;
+}
+.footer .gallary .box-image .text {
+  float: right;
+}
+.footer .data form {
+  float: right;
+}
+.footer .copy-right .text,
+.footer .copy-right .author {
+  float: right;
+}
+.footer .copy-right .author {
+  text-align: left;
+}/*# sourceMappingURL=hompage-rtl.css.map */

@@ -1,0 +1,36 @@
+@use "../helpers/variables" as *;
+@import "../helpers/mixins";
+
+
+* {
+    @include prefixes(box-sizing, border-box, moz webkit)
+}
+
+.container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media #{$minSmall} {
+        width: 750px;
+    }
+
+    @media #{$minMedium} {
+        width: 970px;
+    }
+
+    @media #{$minLarge} {
+        width: 1170px;
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+
+.text-center-xs {
+    @media (max-width:767px) {
+        text-align: center;
+
+    }
+}

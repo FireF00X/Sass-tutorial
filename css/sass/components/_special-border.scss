@@ -1,0 +1,28 @@
+    @use"../helpers/variables" as *;
+
+    .special-header {
+        position: relative;
+        margin: 50px auto;
+
+        h2 {
+            background-color: $redColor;
+            width: 220px;
+            margin: 40px auto;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            border-radius: 6px;
+            padding: 3px 10px;
+
+            &::after {
+                content: "";
+                width: 100%;
+                position: absolute;
+                background-color: $grayColor;
+                height: 1.5px;
+                top: 50%;
+                left: 0;
+                z-index: -1;
+            }
+        }
+    }

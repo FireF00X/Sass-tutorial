@@ -1,0 +1,122 @@
+@use "../helpers/variables" as *;
+
+.header {
+    overflow: hidden;
+    border-bottom: 1px solid $grayColor;
+    padding: 20px 0;
+    position: relative;
+
+    i {
+        font-size: 35px;
+        background-color: #e2494c;
+        border-radius: 6px;
+        color: white;
+        padding: 5px;
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 35px;
+
+        @media (max-width:767px) {
+            display: inline-block;
+        }
+    }
+
+    .logo {
+        width: 30%;
+        float: $float-left;
+        text-align: center;
+
+        @media #{$minSmall} {
+            width: 100%;
+            text-align: center;
+        }
+
+        @media #{$minMedium} {
+            width: 30%;
+            float: $float-left;
+        }
+
+        h1 {
+            text-transform: uppercase;
+
+            margin: {
+                top: 13px;
+                bottom: 3px;
+            }
+
+        }
+
+        span {
+            white-space: nowrap;
+        }
+
+    }
+
+    .navbar {
+        width: 70%;
+        float: left;
+        background-color: $redColor;
+        padding: 20px 10px;
+        border-radius: 15px;
+
+        @media #{$minSmall} {
+            width: 100%;
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        @media #{$minMedium} {
+            width: 70%;
+            float: $float-left;
+            margin-top: 1em;
+        }
+
+        @media (max-width:767px) {
+            display: none;
+            border-radius: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        li {
+            width: 20%;
+            float: $float-left;
+            text-align: center;
+
+            @media (max-width:767px) {
+                display: block;
+                width: 100%;
+                float: none;
+                text-align: left;
+                padding: 10px 50px;
+                position: relative;
+
+                &:not(:last-child):before {
+                    content: "";
+                    position: absolute;
+                    width: 500px;
+                    height: 1px;
+                    background-color: white;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            a {
+                display: block;
+                text-decoration: none;
+                color: #FFF;
+
+                &:hover {
+                    color: #DDD;
+                }
+            }
+        }
+
+        &.active {
+            display: block;
+        }
+    }
+}

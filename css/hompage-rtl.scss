@@ -1,0 +1,141 @@
+$float-left: right;
+$float-right: left;
+
+$minMedium: "(min-width:992px)";
+$minLarge: "(min-width:1200px)";
+$minSmall: "(min-width:768px)";
+
+$redColor: #e2494c;
+$grayColor: #5e5e5e;
+
+$text-left: right;
+$text-right: left;
+
+
+.header {
+    i {
+        right: 89%;
+    }
+
+    .logo {
+        float: $float-right;
+
+        @media #{$minMedium} {
+            float: $float-left;
+        }
+
+        @media(max-width:767px) {
+            float: $float-left;
+        }
+    }
+
+
+    .navbar {
+        float: $float-left;
+
+        @media #{$minMedium} {
+            float: $float-left;
+        }
+
+        li {
+            float: $float-left;
+
+            @media (max-width:767px) {
+                text-align: $text-left;
+            }
+        }
+    }
+}
+
+// end header
+
+/*start services*/
+.services {
+
+    .collection {
+        .serv-box {
+
+
+            @media(min-width:991px) {
+
+                float: $float-left;
+
+            }
+
+
+        }
+
+    }
+}
+
+
+/*end services*/
+/*start services*/
+.players {
+    .collection {
+        .player-box {
+            float: $float-left;
+        }
+    }
+}
+
+
+/*end services*/
+/*start none*/
+.none {
+    .collection {
+
+
+        .lorem {
+
+            float: $float-left;
+        }
+    }
+}
+
+/*end none*/
+.footer {
+
+    .gallary,
+    .info,
+    .data {
+        float: $float-left;
+    }
+
+    .gallary {
+
+
+        .box-image {
+
+            .text {
+                float: $float-left;
+            }
+
+        }
+    }
+
+
+
+    .data {
+
+
+
+        form {
+            float: $float-left;
+        }
+    }
+
+    .copy-right {
+
+
+        .text,
+        .author {
+            float: $float-left;
+        }
+
+        .author {
+            text-align: $text-right;
+
+        }
+    }
+}

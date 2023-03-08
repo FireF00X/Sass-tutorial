@@ -1,0 +1,30 @@
+@mixin overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin prefixes ($property, $value, $prefixes: ()) {
+    @each $prefixe in $prefixes {
+        #{"-" + $prefixe + "-" + $property}: $value;
+    }
+
+    #{$property}:$value;
+}
+
+@mixin keyFrame($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+
+}

@@ -1,0 +1,22 @@
+@use "../helpers/variables" as*;
+
+button {
+    background-color: rgba($redColor, .7);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $redColor;
+    }
+
+    @media (max-width:767px) {
+        width: 100%;
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,13 @@
+@use "sass/helpers/variables" as *;
+@use "sass/helpers/mixins";
+@use "sass/helpers/functions";
+@use "sass/layout/grid";
+@use "sass/components/special-border" as*;
+
+
+@use "sass/components/buttons";
+
+@use "./sass/pages/globalpage";
+@use "sass/layout/header";
+@use "sass/pages/homepage";
+@use "sass/layout/footer";
